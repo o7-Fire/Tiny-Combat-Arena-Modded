@@ -1,0 +1,100 @@
+{
+  "Name": "M1",
+  "ModelPath": "Vehicles/M1/M1",
+  "VisualSubmesh": "Model",
+  "HP": 200,
+  "Armor": 1,
+  "ViewRadius": 8,
+  "EngineSound": "event:/Vehicles/TankEngine",
+  "TargetType": "Armor",
+  "IsStatic": false,
+  "Signature": {
+    "Infrared": [ {"Angle": 0, "Signature": 0.1} ],
+    "Radar": [ {"Angle": 0, "Signature": 1} ],
+    "Radiation": 0,
+    "RadiationFOV": 360.0,
+    "Visual": 1
+  },
+  "Size": {
+    "Height": 3.5,
+    "Width": 4.12,
+    "Length": 7.45
+  },
+  "Movement": {
+    "MaxSpeed": 20,
+    "Acceleration": 0.5,
+    "TurnRate": 30,
+    "TurnAccel": 5
+  },
+  "Effects": {
+    "Destroyed": "Effects/Explosion/ExplosionGroundMedium",
+    "Trail": "Effects/Movement/DustTrail",
+    "TrailOffset": 3
+  },
+  "Wreck": {
+    "TimeToLive": 600,
+    "CraterSize": 10,
+    "Effects": [
+      "Effects/Wreck/WreckSmoke",
+      "Effects/Wreck/WreckSmokeLinger",
+      "Effects/Wreck/WreckFire"
+    ]
+  },
+  "Targeting": {
+    "Enabled": true,
+    "ResponseTime": 1,
+    "PassiveResponseTime": 3,
+    "MaxRange": 2500,
+    "PriorityType": "Armor",
+    "CanTargetAircraft": false,
+    "CanTargetVehicles": true,
+    "CanTargetShips": false,
+    "CanTargetStructures": false
+  },
+  "Scaling": {
+    "Enabled": true,
+    "Offset": 0,
+    "Power": 1
+  },
+  "Turrets": [
+    {
+      "Type": "Gun",
+      "Weapon": "TankCannonMediumWest",
+      "Model": {
+        "TurretParent": "Model",
+        "TurretBase": "turret",
+        "Barrels": "gun"
+      },
+      "Motion": {
+        "ElevationSpeed": 30,
+        "Elevation": 30,
+        "Depression": 5,
+        "TraverseSpeed": 30,
+        "IsTraverseLimited": false,
+        "LeftLimit": 120,
+        "RightLimit": 120
+      },
+      "Firing": {
+        "MaxRange": 2500,
+        "AimTimeMin": 1,
+        "AimTimeMax": 3,
+        "IsBurstFiring": false,
+        "BurstLength": 1.5,
+        "BurstDelay": 3
+      },
+      "Error": {
+        "Leading": 100,
+        "MinError": 0,
+        "MaxError": 0,
+        "OffsetSpeed": 2,
+        "EffectiveRange": 300
+      },
+      "Recoil": {
+        "HasRecoil": true,
+        "Force": 0,
+        "Distance": 0.25,
+        "Recovery": 1
+      }
+    }
+  ]
+}

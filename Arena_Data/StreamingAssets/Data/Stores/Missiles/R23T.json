@@ -1,0 +1,49 @@
+{
+  "Store": {
+    "Name": "R23T",
+    "DisplayName": "R-23T",
+    "Description": "Radar guided air to air missile",
+    "StoreType": "Munition",
+    "ModelPath": "Weapons/Missiles/R23/R23T",
+    "FireSound": "event:/Weapons/MissileLaunchMedium",
+    "DotColors": [ 235, 235, 235 ],
+    "Mass": 222.0,
+    "Length": 4.46,
+    "Diameter": 0.223,
+    "Drag": 0.05
+  },
+  "MotorStages": [
+    {
+      "Duration": 3.5,
+      "Delay": 0.0,
+      "Thrust": 40.0,
+      "FXParent": "Motor1",
+      "FXName": "Effects/MissileMotors/Small"
+    }
+  ],
+  "Guidance": {
+    "GuideType": "Infrared",
+    "MaxG": 5,
+    "MaxRange": 12000,
+    "EffectiveRange": 10000,
+    "SeekerDelay": 0.5,
+    "SeekerFOV": 60,
+    "MaxTurnRate": 180,
+    "SpeedOptimal": 75,
+    "SpeedMinimum": 50
+  },
+  "Warhead": {
+    "ArmTime": 2.5,
+    "BlastRadius": 15.0,
+    "ImpactDamage": 0,
+    "SplashDamage": 175,
+    "Force": 1500.0,
+    "Fuze": "Proximity",
+    "ProximityDistance": 7.5
+  },
+  "Effects": {
+    "Air": "Effects/Explosion/ExplosionGroundMedium",
+    "Ground": "Effects/Explosion/ExplosionGroundMedium",
+    "Water": "Effects/Explosion/ExplosionGroundMedium"
+  }
+}

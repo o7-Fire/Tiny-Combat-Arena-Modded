@@ -1,0 +1,149 @@
+{
+  "Aircraft": "Mig23MLA",
+  "AllowedStores": [
+    {
+      "Store": "R60",
+      "MaxCountPerStation": {
+        "3": 2,
+        "5": 2
+      },
+      "LauncherModelPaths": {
+        "1": "Launchers/R60Launcher",
+        "2": "Launchers/R60Launcher2"
+      }
+    },
+    {
+      "Store": "R23R",
+      "MaxCountPerStation": {
+        "2": 1,
+        "6": 1
+      },
+      "LauncherModelPaths": {}
+    },
+    {
+      "Store": "R23T",
+      "MaxCountPerStation": {
+        "2": 1,
+        "6": 1
+      },
+      "LauncherModelPaths": {}
+    },
+    {
+      "Store": "R24R",
+      "MaxCountPerStation": {
+        "2": 1,
+        "6": 1
+      },
+      "LauncherModelPaths": {}
+    },
+    {
+      "Store": "R24T",
+      "MaxCountPerStation": {
+        "2": 1,
+        "6": 1
+      },
+      "LauncherModelPaths": {}
+    }
+  ],
+  "Loadout": [
+    {
+      "Name": "Clean",
+      "NormalizedFuel": 1.0,
+      "Stores": []
+    },
+    {
+      "Name": "Dogfight",
+      "NormalizedFuel": 1.0,
+      "Stores": [
+        {
+          "Station": 3,
+          "Name": "R60",
+          "Count": 2
+        },
+        {
+          "Station": 5,
+          "Name": "R60",
+          "Count": 2
+        }
+      ]
+    },
+    {
+      "Name": "Strike",
+      "NormalizedFuel": 1.0,
+      "Stores": [
+        {
+          "Station": 3,
+          "Name": "R60",
+          "Count": 2
+        },
+        {
+          "Station": 5,
+          "Name": "R60",
+          "Count": 2
+        },
+        {
+          "Station": 2,
+          "Name": "R23R",
+          "Count": 1
+        },
+        {
+          "Station": 6,
+          "Name": "R23R",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Defense",
+      "NormalizedFuel": 1.0,
+      "Stores": [
+        {
+          "Station": 3,
+          "Name": "R60",
+          "Count": 2
+        },
+        {
+          "Station": 5,
+          "Name": "R60",
+          "Count": 2
+        },
+        {
+          "Station": 2,
+          "Name": "R23R",
+          "Count": 1
+        },
+        {
+          "Station": 6,
+          "Name": "R23R",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Air Superiority",
+      "NormalizedFuel": 1.0,
+      "Stores": [
+        {
+          "Station": 3,
+          "Name": "R60",
+          "Count": 2
+        },
+        {
+          "Station": 5,
+          "Name": "R60",
+          "Count": 2
+        },
+        {
+          "Station": 2,
+          "Name": "R24R",
+          "Count": 1
+        },
+        {
+          "Station": 6,
+          "Name": "R24R",
+          "Count": 1
+        }
+      ]
+    }
+  ]
+}

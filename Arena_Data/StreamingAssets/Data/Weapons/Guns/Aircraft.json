@@ -1,0 +1,110 @@
+[
+  {
+    "Name": "Gsh23",
+    "Projectile": "Projectiles/Gsh23Shell",
+    "MuzzleFlash": "Effects/MuzzleFlash/VulcanMuzzleFlash",
+    "UseAmmo": false,
+    "AmmoCount": 1000,
+    "Gun":
+    {
+      "FireDelay": 0.1,
+      "FireDelayRandomization": 0.0,
+      "MuzzleVelocity": 800,
+      "Deviation": 0.3,
+      "UseSequentialFiring": true
+    },
+    "Audio":
+    {
+      "Sound": "event:/Weapons/GAU12",
+      "IsLoopingAudio": true
+    },
+    "Shake":
+    {
+      "Power": 0.1,
+      "IsContinuous": true,
+      "MinRange": 5,
+      "MaxRange": 25
+    }
+  },
+  {
+    "Name": "M39",
+    "Projectile": "Projectiles/M61Shell",
+    "MuzzleFlash": "Effects/MuzzleFlash/VulcanMuzzleFlash",
+    "UseAmmo": false,
+    "AmmoCount": 1000,
+    "Gun":
+    {
+      "FireDelay": 0.1,
+      "FireDelayRandomization": 0.0,
+      "MuzzleVelocity": 1000,
+      "Deviation": 0.3,
+      "UseSequentialFiring": true
+    },
+    "Audio":
+    {
+      "Sound": "event:/Weapons/GAU12",
+      "IsLoopingAudio": true
+    },
+    "Shake":
+    {
+      "Power": 0.1,
+      "IsContinuous": true,
+      "MinRange": 5,
+      "MaxRange": 25
+    }
+  },
+  {
+    "Name": "M61",
+    "Projectile": "Projectiles/M61Shell",
+    "MuzzleFlash": "Effects/MuzzleFlash/VulcanMuzzleFlash",
+    "UseAmmo": false,
+    "AmmoCount": 1000,
+    "Gun":
+    {
+      "FireDelay": 0.05,
+      "FireDelayRandomization": 0.0,
+      "MuzzleVelocity": 1000,
+      "Deviation": 0.15,
+      "UseSequentialFiring": true
+    },
+    "Audio":
+    {
+      "Sound": "event:/Weapons/GAU12",
+      "IsLoopingAudio": true
+    },
+    "Shake":
+    {
+      "Power": 0.1,
+      "IsContinuous": true,
+      "MinRange": 5,
+      "MaxRange": 25
+    }
+  },
+  {
+    "Name": "GAU12",
+    "Projectile": "Projectiles/GAU12Bullet",
+    "MuzzleFlash": "Effects/MuzzleFlash/VulcanMuzzleFlash",
+    "UseAmmo": true,
+    "AmmoCount": 300,
+    "Gun":
+    {
+      "FireDelay": 0.05,
+      "FireDelayRandomization": 0.0,
+      "MuzzleVelocity": 1600,
+      "Deviation": 0.15,
+      "UseSequentialFiring": false
+    },
+    "Audio":
+    {
+      "Sound": "event:/Weapons/GAU12",
+      "IsLoopingAudio": true
+    },
+    "Shake":
+    {
+      "Power": 0.1,
+      "IsContinuous": true,
+      "MinRange": 5,
+      "MaxRange": 25
+    }
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "Name": "SA9",
+  "ModelPath": "Vehicles/SA9/BRDMStrela1",
+  "VisualSubmesh": "Model",
+  "HP": 50,
+  "Armor": 0,
+  "ViewRadius": 8,
+  "EngineSound": "event:/Vehicles/TankEngine",
+  "TargetType": "Vehicle",
+  "IsStatic": false,
+  "Signature": {
+    "Infrared": [ {"Angle": 0, "Signature": 0.1} ],
+    "Radar": [ {"Angle": 0, "Signature": 1} ],
+    "Radiation": 1,
+    "RadiationFOV": 360.0,
+    "Visual": 1
+  },
+  "Size": {
+    "Height": 1.9,
+    "Width": 2.3,
+    "Length": 5.7
+  },
+  "Movement": {
+    "MaxSpeed": 20,
+    "Acceleration": 0.5,
+    "TurnRate": 30,
+    "TurnAccel": 5
+  },
+  "Effects": {
+    "Destroyed": "Effects/Explosion/ExplosionGroundMedium",
+    "Trail": "Effects/Movement/DustTrail",
+    "TrailOffset": 3
+  },
+  "Wreck": {
+    "TimeToLive": 600,
+    "CraterSize": 10,
+    "Effects": [
+      "Effects/Wreck/WreckSmoke",
+      "Effects/Wreck/WreckSmokeLinger",
+      "Effects/Wreck/WreckFire"
+    ]
+  },
+  "Targeting": {
+    "Enabled": true,
+    "ResponseTime": 1,
+    "PassiveResponseTime": 3,
+    "MaxRange": 1500,
+    "PriorityType": "Attacker",
+    "CanTargetAircraft": true,
+    "CanTargetVehicles": false,
+    "CanTargetShips": false,
+    "CanTargetStructures": false
+  },
+  "Scaling": {
+    "Enabled": true,
+    "Offset": 0,
+    "Power": 1
+  },
+  "Turrets": [
+    {
+      "Type": "Missile",
+      "Munition": "9M31",
+      "Launcher": {
+        "FireDelay": 10,
+        "LaunchVelocity": 0,
+        "ReloadTime": 90,
+        "ReloadCount": 0,
+        "HideMunition": true
+      },
+      "Model": {
+        "TurretParent": "Model",
+        "TurretBase": "brdm2_strela1_turret",
+        "Barrels": "strela1"
+      },
+      "Motion": {
+        "ElevationSpeed": 15,
+        "Elevation": 45,
+        "Depression": 0,
+        "TraverseSpeed": 30,
+        "IsTraverseLimited": false
+      }
+    }
+  ]
+}

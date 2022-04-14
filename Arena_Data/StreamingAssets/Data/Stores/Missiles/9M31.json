@@ -1,0 +1,49 @@
+{
+  "Store": {
+    "Name": "9M31",
+    "DisplayName": "9M31",
+    "Description": "IR guided surface to air missile",
+    "StoreType": "Munition",
+    "ModelPath": "Weapons/Missiles/SA9/9M31",
+    "FireSound": "event:/Weapons/MissileLaunchLight",
+    "DotColors": [ 101, 118, 87 ],
+    "Mass": 250.0,
+    "Length": 3.5,
+    "Diameter": 0.127,
+    "Drag": 0.05
+  },
+  "MotorStages": [
+    {
+      "Duration": 6.0,
+      "Delay": 0.5,
+      "Thrust": 30.0,
+      "FXParent": "Motor1",
+      "FXName": "Effects/MissileMotors/Small"
+    }
+  ],
+  "Guidance": {
+    "GuideType": "Infrared",
+    "MaxG": 10,
+    "MaxRange": 8000,
+    "EffectiveRange": 6000,
+    "SeekerDelay": 0.25,
+    "SeekerFOV": 60,
+    "MaxTurnRate": 180,
+    "SpeedOptimal": 75,
+    "SpeedMinimum": 50
+  },
+  "Warhead": {
+    "ArmTime": 1.0,
+    "BlastRadius": 15.0,
+    "ImpactDamage": 0,
+    "SplashDamage": 100,
+    "Force": 1500.0,
+    "Fuze": "Proximity",
+    "ProximityDistance": 5.0
+  },
+  "Effects": {
+    "Air": "Effects/Explosion/ExplosionGroundMedium",
+    "Ground": "Effects/Explosion/ExplosionGroundMedium",
+    "Water": "Effects/Explosion/ExplosionGroundMedium"
+  }
+}

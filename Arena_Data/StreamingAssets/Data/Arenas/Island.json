@@ -1,0 +1,115 @@
+{
+  "Name": "Island",
+  "Map": "ActionIsland",
+  "Description": "Here's a cool description of a battle.",
+  "Thumbnail": "",
+  "StartTimeHours": 10.0,
+  "TimePasses": false,
+
+  "PlayerFaction": "USA",
+  "CoalitionsBlue": ["USA"],
+  "CoalitionsRed": ["USSR"],
+
+  "PlayerAircraft": [
+    "AV8B"
+  ],
+  "PlayerLoadout": "Light Attack",
+  "PilotsAvailable": 8,
+
+  "PrimaryObjectives": [
+    {"Goal": "Capture", "Target": "Murasa"},
+    {"Goal": "Capture", "Target": "Toramaru"}
+  ],
+  "SecondaryObjectives": [
+    {"Goal": "Disable", "Target": "Ichirin"}
+  ],
+
+  "TicketsBlue": 30000,
+  "TicketsRed": 30000,
+
+  "Homebase": "Nazrin",
+  "StrategicTargets": [
+    {
+      "MapName": "Nazrin",
+      "DisplayName": "Nazrin Army Airfield",
+      "Faction": "USA",
+      "Strength": 100,
+      "StrengthMax": 100,
+      "RespawnTimer": 120.0,
+      "RespawnDelay": 0.0,
+      "Airfield": {
+        "DefensiveFlights": [
+          {"Faction": "USA", "Aircraft": "F5E", "Count": 2, "Loadout": "Dogfight", "Skill": "Ace", "Mission": "CombatAirPatrol"},
+          {"Faction": "USA", "Aircraft": "F5E", "Count": 2, "Loadout": "Dogfight", "Skill": "Ace", "Mission": "CombatAirPatrol"},
+          {"Faction": "USA", "Aircraft": "F4E", "Count": 2, "Loadout": "Dogfight", "Skill": "Ace", "Mission": "CombatAirPatrol"}
+        ]
+      },
+      "Formations": [
+        {"Name": "", "Faction": "USA", "Type": "Mechanized", "Role": "Capture", "Max": 1}
+      ]
+    },
+    {
+      "MapName": "Kogasa",
+      "DisplayName": "Kogasa Arms Fort",
+      "Faction": "USA",
+      "Strength": 100,
+      "StrengthMax": 100,
+      "RespawnTimer": 300.0,
+      "RespawnDelay": 0.0,
+      "Formations": [
+        {"Name": "", "Faction": "USA", "Type": "ArmorM60", "Role": "Hunt", "Max": 1},
+        {"Name": "", "Faction": "USA", "Type": "ArmorM1", "Role": "Hunt", "Max": 1},
+        {"Name": "", "Faction": "USSR", "Type": "ArmorT62", "Role": "Hunt", "Max": 1}
+      ],
+      "Airfield": {
+        "MapName": "Kogasa"
+      }
+    },
+    {
+      "MapName": "Ichirin",
+      "DisplayName": "Ichirin Forward Base",
+      "Faction": "USSR",
+      "Strength": 100,
+      "StrengthMax": 100,
+      "RespawnTimer": 300.0,
+      "RespawnDelay": 0.0,
+      "Formations": [
+        {"Name": "", "Faction": "USA", "Type": "Mechanized", "Role": "Capture", "Max": 1},
+        {"Name": "", "Faction": "USSR", "Type": "Mechanized", "Role": "Capture", "Max": 1}
+      ]
+    },
+    {
+      "MapName": "Murasa",
+      "DisplayName": "Murasa Garrison",
+      "Faction": "USSR",
+      "Strength": 100,
+      "StrengthMax": 100,
+      "RespawnTimer": 600.0,
+      "RespawnDelay": 0.0,
+      "Formations": [
+        {"Name": "", "Faction": "USSR", "Type": "ArmorT62", "Role": "Hunt", "Max": 1},
+        {"Name": "", "Faction": "USSR", "Type": "Mechanized", "Role": "Capture", "Max": 1}
+      ]
+    },
+    {
+      "MapName": "Toramaru",
+      "DisplayName": "Shou Airbase",
+      "Faction": "USSR",
+      "Strength": 100,
+      "StrengthMax": 100,
+      "RespawnTimer": 600.0,
+      "RespawnDelay": 0.0,
+      "Airfield": {
+        "DefensiveFlights": [
+          {"Faction": "USSR", "Aircraft": "Mig21bis", "Count": 2, "Loadout": "Dogfight", "Skill": "Rookie", "Mission": "CombatAirPatrol"},
+          {"Faction": "USSR", "Aircraft": "Mig21bis", "Count": 2, "Loadout": "Dogfight", "Skill": "Rookie", "Mission": "CombatAirPatrol"},
+          {"Faction": "USSR", "Aircraft": "Mig23MLA", "Count": 2, "Loadout": "Air Superiority", "Skill": "Average", "Mission": "CombatAirPatrol"}
+        ]
+      },
+      "Formations": [
+        {"Name": "", "Faction": "USSR", "Type": "Mechanized", "Role": "Capture", "Max": 1}
+      ]
+    }
+  ],
+  "ActiveFormations": []
+}

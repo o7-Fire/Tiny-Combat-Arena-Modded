@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "V750",
+    "DisplayName": "V750 \"SA-2\"",
+    "Category": "Munition",
+    "Filter": "SAM",
+    "Description": "A ubuiquitous surface to air radar guided missile. Launched from strategic \"SA-2\" sites.",
+    "Tactics": "The V750 is a large and ungainly two-staged missile. While it carries a large warhead, it is easy to kinematically evade due to its size and poor tracking abilities"
+  },
+  {
+    "Name": "9M31",
+    "DisplayName": "9M31 \"SA-9\"",
+    "Category": "Munition",
+    "Filter": "SAM",
+    "Description": "A compact infrared guided surface to air missile designed alongside the man-portable Strela-2.",
+    "Tactics": "The Strela-1 is short ranged, but has good kinematic performance within that range. Its seeker can be fooled easily with flares."
+  }
+]

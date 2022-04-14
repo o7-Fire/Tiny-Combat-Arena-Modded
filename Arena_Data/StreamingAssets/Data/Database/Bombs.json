@@ -1,0 +1,34 @@
+[
+  {
+    "Name": "Mk82",
+    "DisplayName": "Mk82",
+    "Category": "Munition",
+    "Filter": "Bomb",
+    "Description": "Unguided 500lb high explosive bomb with low drag.",
+    "Tactics": "Unguided bombs are well suited to taking out structures due their high impact damage."
+  },
+  {
+    "Name": "Mk83",
+    "DisplayName": "Mk83",
+    "Category": "Munition",
+    "Filter": "Bomb",
+    "Description": "Unguided 1000lb high explosive bomb with low drag.",
+    "Tactics": "Unguided bombs are well suited to taking out structures due their high impact damage."
+  },
+  {
+    "Name": "Mk84",
+    "DisplayName": "Mk84",
+    "Category": "Munition",
+    "Filter": "Bomb",
+    "Description": "Unguided 2000lb high explosive bomb with low drag.",
+    "Tactics": "Unguided bombs are well suited to taking out structures due their high impact damage."
+  },
+  {
+    "Name": "Mk20",
+    "DisplayName": "Mk20 Rockeye",
+    "Category": "Munition",
+    "Filter": "Bomb",
+    "Description": "Cluster bomb designed for taking out vehicles and armored units.",
+    "Tactics": "Cluster bombs use an airburst fuze. The lower to the ground they are deployed, the tighter the spread of bomblets."
+  }
+]

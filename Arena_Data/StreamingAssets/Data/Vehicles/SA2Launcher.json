@@ -1,0 +1,70 @@
+{
+  "Name": "SA2Launcher",
+  "ModelPath": "Vehicles/SA2/SA2Launcher",
+  "VisualSubmesh": "Model",
+  "HP": 50,
+  "Armor": 0,
+  "ViewRadius": 16,
+  "EngineSound": "",
+  "TargetType": "SAM",
+  "IsStatic": true,
+  "Signature": {
+    "Infrared": [ {"Angle": 0, "Signature": 0.1} ],
+    "Radar": [ {"Angle": 0, "Signature": 1} ],
+    "Radiation": 0,
+    "RadiationFOV": 360.0,
+    "Visual": 1
+  },
+  "Size": {
+    "Height": 3.5,
+    "Width": 3.0,
+    "Length": 7.7
+  },
+  "Effects": {
+    "Destroyed": "Effects/Explosion/ExplosionGroundMedium",
+    "Trail": "Effects/Movement/DustTrail",
+    "TrailOffset": 3
+  },
+  "Wreck": {
+    "TimeToLive": 600,
+    "CraterSize": 10,
+    "Effects": [
+      "Effects/Wreck/WreckSmoke",
+      "Effects/Wreck/WreckSmokeLinger",
+      "Effects/Wreck/WreckFire"
+    ]
+  },
+  "Scaling": {
+    "Enabled": true,
+    "Offset": 0,
+    "Power": 1
+  },
+  "Turrets": [
+    {
+      "Type": "Missile",
+      "Munition": "V750",
+      "Launcher": {
+        "VerticalLaunch": true,
+        "FireDelay": 0,
+        "LaunchSpeed": 0,
+        "ReloadTime": 300,
+        "ReloadCount": -1,
+        "HideMunition": false
+      },
+      "Model": {
+        "TurretParent": "Model",
+        "TurretBase": "Turret",
+        "Barrels": "Rail"
+      },
+      "Motion": {
+        "ElevationSpeed": 15,
+        "Elevation": 60,
+        "Depression": 0,
+        "TraverseSpeed": 0,
+        "IsTraverseLimited": true,
+        "LeftLimit": 0,
+        "RightLimit": 0
+      }
+    }
+  ]
+}

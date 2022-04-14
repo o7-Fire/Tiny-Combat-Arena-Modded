@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "AV8B",
+    "DisplayName": "AV8B",
+    "Category": "FixedWing",
+    "IsFancy": true,
+    "Filter": "Attacker",
+    "Description": "A highly advanced VTOL attack aircraft produced through a joint effort between the United Kingdom and the United States.\n\nIn addition to increased performance and weapons carriage, the AV8B features a short-range radar.",
+    "Tactics": "The unique ability to vector thrust in flight allows for creative tactics during combat.\n\nWhile the AV8B can carry a wide array of weapons, its limited hardpoints space means that loadouts will typically be specialized to a mission."
+  }
+]

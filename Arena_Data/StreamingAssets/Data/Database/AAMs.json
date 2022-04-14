@@ -1,0 +1,99 @@
+[
+  {
+    "Name": "AIM7E",
+    "DisplayName": "AIM-7E",
+    "Category": "Munition",
+    "Filter": "AAM",
+    "Description": "The primary radar guided missile in use by US-developed fighters, but is in the process of being replaced by the much more capable AIM-7F.",
+    "Tactics": "Due to its short burning motor, the \"E\" is difficult to use beyond visual ranges. However, its large size affords a warhead powerful enough to obliterate most fighters on impact. Be aware of the lengthy arming period when firing at close range.\n\nSemi-Active radar guided missiles must be supported by their launching radars at all times. If something interrupts the radar, or lock is lost for any other reason, the missile is guaranteed to miss."
+  },
+  {
+    "Name": "AIM7F",
+    "DisplayName": "AIM-7F",
+    "Category": "Munition",
+    "Filter": "AAM",
+    "Description": "The latest version of the radar guided AIM-7 series of missiles. Most notably, it features a very long-burning boost-sustain motor.",
+    "Tactics": "With the new motor, the effective range of the AIM-7 has been dramatically increased, allowing for engagement beyond visual ranges. A long burning motor also makes it somewhat effective in a dogfight due to its ability to relentlessly chase a target.\n\nSemi-Active radar guided missiles must be supported by their launching radars at all times. If something interrupts the radar, or lock is lost for any other reason, the missile is guaranteed to miss."
+  },
+  {
+    "Name": "AIM9C",
+    "DisplayName": "AIM-9C",
+    "Category": "Munition",
+    "Filter": "AAM",
+    "Description": "Radar guided short range dogfight missile. The AIM-9C is an older model of the AIM-9 that eschews the typical infrared seeker for semi-active radar homing guidance.",
+    "Tactics": "This variant of the AIM-9 trades off kinematics for the ability to fire from any aspect using its radar guidance.\n\nSemi-Active radar guided missiles must be supported by their launching radars at all times. If something interrupts the radar, or lock is lost for any other reason, the missile is guaranteed to miss."
+  },
+  {
+    "Name": "AIM9L",
+    "DisplayName": "AIM-9L",
+    "Category": "Munition",
+    "Filter": "AAM",
+    "Description": "IR guided short range dogfight missile with excellent performance across the board. The \"Lima\" model has a very accurate and reliable seeker.",
+    "Tactics": "Firing IR guided missiles from behind a target ensures the best possible tracking and resistance to countermeasure flares."
+  },
+  {
+    "Name": "AIM82B",
+    "DisplayName": "AIM-82B",
+    "Category": "Munition",
+    "Filter": "AAM",
+    "CartOffset": -0.176,
+    "Description": "Very short range and maneuverable IR guided dogfight missile. It can be carried in larger numbers due to its small size.",
+    "Tactics": "Compared to the AIM-9 series, this missile has a shorter range and smaller warhead, but is more maneuverable. For larger targets, ripple firing may be necessary.\n\nFiring IR guided missiles from behind a target ensures the best possible tracking and resistance to countermeasure flares."
+  },
+  {
+    "Name": "R3R",
+    "DisplayName": "R-3R",
+    "Category": "Munition",
+    "Filter": "AAM",
+    "Description": "Basic and short ranged radar guided missile.\n\nThe R-3 series of missiles is based on a captured example of an early AIM-9 missile.",
+    "Tactics": "This basic dogfight missile swaps out the IR seeker for a radar one. This makes the missile dangerous in a head on pass, but is otherwise unremarkable and not terribly agile."
+  },
+  {
+    "Name": "R3S",
+    "DisplayName": "R-3S",
+    "Category": "Munition",
+    "Filter": "AAM",
+    "Description": "Basic and short ranged rear aspect infrared missile.\n\nThe R-3 series of missiles is based on a captured example of an early AIM-9 missile.",
+    "Tactics": "This basic dogfight missile is easily spoofed and evaded due to its poor seeker."
+  },
+  {
+    "Name": "R23R",
+    "DisplayName": "R-23R",
+    "Category": "Munition",
+    "Filter": "AAM",
+    "Description": "High speed radar guided missile designed for the MiG-23.",
+    "Tactics": "Due to its all aspect nature and high speed, this missile is extremely dangerous at the merge, but suffers in a dogfight due to its limited maneuvering capability."
+  },
+  {
+    "Name": "R23T",
+    "DisplayName": "R-23T",
+    "Category": "Munition",
+    "Filter": "AAM",
+    "Description": "High speed infrared guided missile designed for the MiG-23. Its range is limited by the infrared seeker.",
+    "Tactics": "The R-23T is a very dangerous missile when used against a target on the edges of dogfight range due to its high speed, though the infrared seeker will limit its ability to hit targets head on from a distance."
+  },
+  {
+    "Name": "R24R",
+    "DisplayName": "R-24R",
+    "Category": "Munition",
+    "Filter": "AAM",
+    "Description": "Updated model of the R-23 featuring a longer burning motor and enhanced maneuverability.\n\nHigh speed radar guided missile designed for the MiG-23.",
+    "Tactics": "The all aspect nature of the radar guidance coupled with the very powerful and relatively long burning motor creates a high speed missile that is limited more by sensors than kinematics."
+  },
+  {
+    "Name": "R24T",
+    "DisplayName": "R-24T",
+    "Category": "Munition",
+    "Filter": "AAM",
+    "Description": "Updated model of the R-23 featuring a longer burning motor and enhanced maneuverability.\n\nHigh speed infrared guided missile designed for the MiG-23. Its range is limited by the infrared seeker.",
+    "Tactics": "While range is inherently limited in the head on aspect, this updated model is dangerous at all ranges due to its increased maneuverability and being fired directly off the rail."
+  },
+  {
+    "Name": "R60",
+    "DisplayName": "R-60",
+    "Category": "Munition",
+    "Filter": "AAM",
+    "Description": "Very small and agile IR rear-aspect dogfight missile.",
+    "Tactics": "Though it has a small warhead, the R-60 is unmatched in its agility. Your best chance of evasion is to take advantage of its poor seeker head which is sensitive to flares and aspect."
+  }
+]

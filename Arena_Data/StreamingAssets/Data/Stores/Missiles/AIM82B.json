@@ -1,0 +1,49 @@
+{
+  "Store": {
+    "Name": "AIM82B",
+    "DisplayName": "AIM-82B",
+    "Description": "Very short range IR guided missile",
+    "StoreType": "Munition",
+    "ModelPath": "Weapons/Missiles/AIM82/AIM82",
+    "FireSound": "event:/Weapons/MissileLaunchLight",
+    "DotColors": [ 235, 235, 231 ],
+    "Mass": 46.0,
+    "Length": 1.68,
+    "Diameter": 0.127,
+    "Drag": 0.05
+  },
+  "MotorStages": [
+    {
+      "Duration": 4.0,
+      "Delay": 0.0,
+      "Thrust": 6.0,
+      "FXParent": "Motor1",
+      "FXName": "Effects/MissileMotors/Small"
+    }
+  ],
+  "Guidance": {
+    "GuideType": "Infrared",
+    "MaxG": 40,
+    "MaxRange": 7000,
+    "EffectiveRange": 5000,
+    "SeekerDelay": 0.25,
+    "SeekerFOV": 60,
+    "MaxTurnRate": 180,
+    "SpeedOptimal": 75,
+    "SpeedMinimum": 50
+  },
+  "Warhead": {
+    "ArmTime": 1.0,
+    "BlastRadius": 15.0,
+    "ImpactDamage": 0,
+    "SplashDamage": 80,
+    "Force": 1500.0,
+    "Fuze": "Proximity",
+    "ProximityDistance": 5.0
+  },
+  "Effects": {
+    "Air": "Effects/Explosion/ExplosionGroundMedium",
+    "Ground": "Effects/Explosion/ExplosionGroundMedium",
+    "Water": "Effects/Explosion/ExplosionGroundMedium"
+  }
+}
