@@ -1,0 +1,574 @@
+{
+  "Name": "F4E",
+  "DisplayName": "F-4E",
+  "DotColors": [76, 86, 62],
+
+  "ModelPath": "Aircraft/F4E/F4E",
+  "AnimatorPath": "Aircraft/F4E/F4EAnimator",
+  "SpawnOffset": -2.42,
+  "SpawnRotation": 0.0,
+
+  "FlybyEventName": "event:/Engines/Flybys/J79Flybys",
+
+  "DefaultTactics": {
+    "CruiseSpeedKt": 350,
+    "ROEPreset": "Fighter"
+  },
+
+  "Colliders": [
+    "C_Fuselage",
+    "C_FuselageEngines"
+  ],
+
+  "WingTrails": [
+    "TrailL",
+    "TrailR"
+  ],
+
+  "TargetType": "Fighter",
+  "TargetCenter": "FlybyFocus",
+  "Signature": {
+    "Infrared": [
+      {"Angle": 0, "Signature": 0.6},
+      {"Angle": 90, "Signature": 0.8},
+      {"Angle": 180, "Signature": 1.0}
+    ],
+    "Radar": [
+      {"Angle": 0, "Signature": 1.0},
+      {"Angle": 90, "Signature": 1.2},
+      {"Angle": 180, "Signature": 1.0}
+    ],
+    "Radiation": 0.5,
+    "RadiationFOV": 60.0,
+    "Visual": 1
+  },
+
+  "Radar": {
+    "Name": "A-A Radar",
+    "MountPoint": "Radar",
+    "Domain": "Air",
+    "MaxRange": 24000.0,
+    "Detectability": 1.0,
+    "EffectiveRange": 16000.0,
+    "FieldOfView": 60.0
+  },
+
+  "Countermeasures": {
+    "Flares": 60,
+    "Chaff": 60,
+    "FireDelay": 0.2,
+    "LaunchSpeed": 30,
+    "FlareHardpoints": ["CMLauncher1"],
+    "ChaffHardpoints": ["CMLauncher1"]
+  },
+
+  "FlybyFocus": "FlybyFocus",
+  "MinCamDistance": 13.5,
+
+  "PilotSeats": [ "Pilot1", "Pilot2" ],
+  "CanopyMeshes": [ "CanopyEject1", "CanopyEject2" ],
+
+  "Physics": {
+    "EmptyWeightKg": 13750,
+    "InternalFuelWeightKg": 5150,
+
+    "AngularDrag": 360000,
+    "CriticalAOA": 15,
+    "GroundedElevatorBoost": 2,
+
+    "MaxPitchRateDeg": 22,
+    "MaxYawRateDeg": 5,
+    "MaxRollRateDeg": 140,
+
+    "WingArea": 50.0,
+    "Wingspan": 11.7,
+
+    "StallSpeedCleanKt": 160,
+
+    "BrakeDeployTime": 2,
+    "BrakeDrag": 1,
+
+    "MaxSpeedDry": 530,
+    "MaxSpeedWet": 1280,
+
+    "RCSTorquePitch": 0,
+    "RCSTorqueYaw": 0,
+    "RCSTorqueRoll": 0,
+    "RCSLimits": [],
+
+    "GLimits": [
+      {"Knots": 0, "G": 0.0},
+      {"Knots": 90, "G": 0.0},
+      {"Knots": 140, "G": 1.0},
+      {"Knots": 250, "G": 3.0},
+      {"Knots": 300, "G": 4.0},
+      {"Knots": 400, "G": 8.0},
+      {"Knots": 450, "G": 8.0},
+      {"Knots": 700, "G": 6.0}
+    ]
+  },
+
+  "Engines": [
+    {
+      "Name": "J79",
+      "DisplayName": "J79-GE-17A",
+      "ExternalAudioEvent": "event:/Engines/J79",
+      "DistantAudioEvent:": "event:/Engines/Distant/Fighter",
+
+      "FuelEfficiency": 8,
+      "FuelEfficiencyAB": 3,
+
+      "MilThrust": 53000,
+      "ABThrust": 80000,
+
+      "HasAfterburner": true,
+      "TimeToFullThrottle": 5.0,
+      "StartupTime": 15.0,
+
+      "Instances": [
+        {
+          "Name": "Left",
+          "XOffset": -0.57,
+          "Effects": [
+            {
+              "AttachTo": "EngineFXL",
+              "EffectPath": "Effects/Engines/AfterburningEngine",
+              "NozzleInterior": "NozzleIntL",
+              "BurnerMinScale": 0.7,
+              "BurnerMaxScale": 0.8
+            }
+          ]
+        },
+        {
+          "Name": "Right",
+          "XOffset": 0.57,
+          "Effects": [
+            {
+              "AttachTo": "EngineFXR",
+              "EffectPath": "Effects/Engines/AfterburningEngine",
+              "NozzleInterior": "NozzleIntR",
+              "BurnerMinScale": 0.7,
+              "BurnerMaxScale": 0.8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "FlapSpeed": 25,
+  "FlapStates": [
+    {
+      "Name": "Landing",
+      "StallSpeedKt": 130,
+      "AOABoost": 1.5,
+      "Drag": 0.5,
+      "Angle": 25,
+      "MaxSpeedKt": 280,
+      "MinNozzleAngle": 0
+    }
+  ],
+
+  "LandingGear": {
+    "GearUpAnimationName": "GearUp",
+    "ExtendAudioEvent": "event:/Aircraft/GearDeploy",
+    "RetractAudioEvent": "event:/Aircraft/GearRetract",
+    "RetractTime": 3.0,
+    "HideGeometry": [],
+
+    "AeroDrag": 0.5,
+    "OffRoadDrag": 600,
+    "OffRoadBonus": 1,
+    "OffRoadGripMultiplier": 0.1,
+    "OffRoadBrakeMultiplier": 0.1,
+
+    "Wheels": [
+      {
+        "Name": "NoseWheel",
+        "Position": "Center",
+        "UseAnimation": true,
+
+        "AttachPoint": "GearNose",
+        "GearDummy": "GearNoseStrut",
+        "WheelDummy": "GearNoseWheel",
+        "Collateral": [ "GearNoseBase" ],
+
+        "SuspensionRootOffset": 0.8518,
+        "SuspensionTravel": 0.5959,
+        "MaxGearTravel": 0.3184,
+        "Radius": 0.25,
+
+        "SpringForce": 400,
+        "DampingForce": 20,
+
+        "SteerSpeed": 30,
+        "SteerMaxAngle": 30,
+        "SteeringCurve": [
+          {"Knots": 0, "SteeringPower": 1.0},
+          {"Knots": 10, "SteeringPower": 1.0},
+          {"Knots": 30, "SteeringPower": 0.25},
+          {"Knots": 90, "SteeringPower": 0.0}
+        ],
+
+        "MaxSidewaysForce": 10,
+        "TractionForce": 35,
+        "BrakingForce": 5
+      },
+      {
+        "Name": "MainWheelL",
+        "Position": "Left",
+        "UseAnimation": true,
+
+        "AttachPoint": "GearMainL",
+        "GearDummy": "GearMainStrutL",
+        "WheelDummy": "GearMainWheelL",
+        "Collateral": [ "GearMainBaseL" ],
+
+        "SuspensionRootOffset": 0.5575,
+        "SuspensionTravel": 0.6386,
+        "MaxGearTravel": 0.1438,
+        "Radius": 0.39,
+
+        "SpringForce": 500,
+        "DampingForce": 30,
+
+        "MaxSteerSpeed": 0,
+
+        "MaxSidewaysForce": 30,
+        "TractionForce": 35,
+        "BrakingForce": 25
+      },
+      {
+        "Name": "MainWheelR",
+        "Position": "Right",
+        "UseAnimation": true,
+
+        "AttachPoint": "GearMainR",
+        "GearDummy": "GearMainStrutR",
+        "WheelDummy": "GearMainWheelR",
+        "Collateral": [ "GearMainBaseR" ],
+
+        "SuspensionRootOffset": 0.5575,
+        "SuspensionTravel": 0.6386,
+        "MaxGearTravel": 0.1438,
+        "Radius": 0.39,
+
+        "SpringForce": 500,
+        "DampingForce": 30,
+
+        "MaxSteerSpeed": 0,
+
+        "MaxSidewaysForce": 30,
+        "TractionForce": 35,
+        "BrakingForce": 25
+      }
+    ]
+  },
+
+  "FuselageHP": 600,
+  "CriticalHP": 480,
+
+  "HideMeshesOnDestroy": [
+    "Fuselage",
+    "NozzleIntL",
+    "NozzleIntR",
+    "Cockpit",
+    "Canopy",
+    "ElevatorsRoot",
+    "GearNoseStrut",
+    "GearNoseBase",
+    "GearNoseWheel"
+  ],
+
+  "GibMeshes": [
+    "GibsBody",
+    "GibsEngines",
+    "GibsNose",
+    "GibsTail"
+  ],
+
+  "LODGroups": [
+    {
+      "Level": "0",
+      "MinScreenSizePercent": 5,
+      "Meshes": [
+        "Canopy",
+        "CanopyEject1",
+        "CanopyEject2",
+        "Cockpit",
+        "ElevatorsRoot",
+        "ElevatorLeft",
+        "ElevatorRight",
+        "Fuselage",
+        "NozzleIntL",
+        "NozzleIntR",
+        "Pylon5",
+        "Tail",
+        "TailRoot",
+        "WingLeftInner",
+        "Pylon1",
+        "Pylon2",
+        "WingLeftOuter",
+        "WingRightInner",
+        "Pylon8",
+        "Pylon9",
+        "WingRightOuter"
+      ]
+    },
+    {
+      "Level": "1",
+      "MinScreenSizePercent": 0.25,
+      "Meshes": [
+        "LODElevatorLeft",
+        "LODElevatorRight",
+        "LODFuselage",
+        "LODTail",
+        "LODWingLeft",
+        "LODWingRight",
+        "LODWingtipLeft",
+        "LODWingtipRight"
+      ]
+    }
+  ],
+
+  "DamageEffects": [
+    {
+      "EffectPath": "Effects/Damage/LongSmokeTrail",
+      "SpawnLocation": "",
+      "AttachToParent": true,
+
+      "SpawnChance": 1,
+      "SpawnEffectAtImpact": false,
+
+      "TriggerWithPercent": true,
+      "TriggerPercent": 0.9
+    }
+  ],
+
+  "FireFX": "Effects/Damage/ShortFireTrail",
+  "AirExplosionFX": "Effects/Explosion/ExplosionGroundMedium",
+  "GroundExplosionFX": "Effects/Explosion/ExplosionGroundMedium",
+  "WaterExplosionFX": "Effects/Explosion/ExplosionGroundMedium",
+
+  "DamageableParts": [
+    {
+      "Name": "WingLeftOuter",
+      "Hp": 65,
+      "Mass": 200,
+      "BreakImpulse": 5,
+      "ContributesDamage": true,
+      "ChildPart": "",
+      "VisualMesh": "WingLeftOuter",
+      "ColliderMesh": "C_WingLeftOuter",
+      "Collateral": [ ],
+      "PhysicsDamage": [
+        {"Wing": "WingLeft", "WingAreaDamage": 10.0},
+        {"Control": "Roll", "ControlDamage": 0.1}
+      ],
+      "DestroyTrails": ["TrailL"],
+      "DestroyEngines": [ ],
+      "DestroyWheels": [ ]
+    },
+    {
+      "Name": "WingLeftInner",
+      "Hp": 65,
+      "Mass": 1500,
+      "BreakImpulse": 10,
+      "ContributesDamage": true,
+      "ChildPart": "WingLeftOuter",
+      "VisualMesh": "WingLeftInner",
+      "ColliderMesh": "C_WingLeftInner",
+      "Collateral": [ ],
+      "PhysicsDamage": [
+        {"Wing": "WingLeft", "WingAreaDamage": 30.0},
+        {"Control": "Roll", "ControlDamage": 0.5}
+      ],
+      "DestroyTrails": [],
+      "DestroyEngines": [
+        {"Engine": "J79", "Instance": "Left"}
+      ],
+      "DestroyWheels": [ "MainWheelL" ]
+    },
+    {
+      "Name": "WingRightOuter",
+      "Hp": 65,
+      "Mass": 200,
+      "BreakImpulse": 5,
+      "ContributesDamage": true,
+      "ChildPart": "",
+      "VisualMesh": "WingRightOuter",
+      "ColliderMesh": "C_WingRightOuter",
+      "Collateral": [ ],
+      "PhysicsDamage": [
+        {"Wing": "WingRight", "WingAreaDamage": 10.0},
+        {"Control": "Roll", "ControlDamage": 0.1}
+      ],
+      "DestroyTrails": ["TrailR"],
+      "DestroyEngines": [ ],
+      "DestroyWheels": [ ]
+    },
+    {
+      "Name": "WingRightInner",
+      "Hp": 65,
+      "Mass": 1500,
+      "BreakImpulse": 10,
+      "ContributesDamage": true,
+      "ChildPart": "WingRightOuter",
+      "VisualMesh": "WingRightInner",
+      "ColliderMesh": "C_WingRightInner",
+      "Collateral": [ ],
+      "PhysicsDamage": [
+        {"Wing": "WingRight", "WingAreaDamage": 30.0},
+        {"Control": "Roll", "ControlDamage": 0.5}
+      ],
+      "DestroyTrails": [],
+      "DestroyEngines": [
+        {"Engine": "J79", "Instance": "Left"}
+      ],
+      "DestroyWheels": [ "MainWheelR" ]
+    },
+    {
+      "Name": "ElevatorLeft",
+      "Hp": 70,
+      "Mass": 200,
+      "BreakImpulse": 5,
+      "ContributesDamage": true,
+      "ChildPart": "",
+      "VisualMesh": "ElevatorLeft",
+      "ColliderMesh": "C_ElevatorL",
+      "PhysicsDamage": [
+        {"Wing": "WingRight", "WingAreaDamage": 5.0},
+        {"Control": "Pitch", "ControlDamage": 0.5}
+      ]
+    },
+    {
+      "Name": "ElevatorRight",
+      "Hp": 70,
+      "Mass": 200,
+      "BreakImpulse": 5,
+      "ContributesDamage": true,
+      "ChildPart": "",
+      "VisualMesh": "ElevatorRight",
+      "ColliderMesh": "C_ElevatorR",
+      "PhysicsDamage": [
+        {"Wing": "WingLeft", "WingAreaDamage": 5.0},
+        {"Control": "Pitch", "ControlDamage": 0.5}
+      ]
+    },
+    {
+      "Name": "Rudder",
+      "Hp": 110,
+      "Mass": 200,
+      "BreakImpulse": 5,
+      "ContributesDamage": true,
+      "ImpactsHitCenter": true,
+      "ChildPart": "",
+      "VisualMesh": "Tail",
+      "ColliderMesh": "C_Rudder",
+      "PhysicsDamage": [
+        {"Wing": "StabilizerVertical", "WingAreaDamage": 12.0},
+        {"Control": "Yaw", "ControlDamage": 1.0}
+      ]
+    }
+  ],
+
+  "Gun": {
+    "Weapon": "M61",
+    "Barrels": [ "Barrel" ],
+    "RecoilForce": 0.0
+  },
+
+  "Stations": [
+    {
+      "Number": 11,
+      "PylonMesh": "",
+      "AttachPoint": "Station11",
+      "FireOrder": 1,
+      "HidePylonWhenUnloaded": false,
+      "IsHardpoint": false
+    },
+    {
+      "Number": 12,
+      "PylonMesh": "",
+      "AttachPoint": "Station12",
+      "FireOrder": 2,
+      "HidePylonWhenUnloaded": false,
+      "IsHardpoint": false
+    },
+
+    {
+      "Number": 3,
+      "PylonMesh": "",
+      "AttachPoint": "Station3",
+      "FireOrder": 3,
+      "HidePylonWhenUnloaded": false,
+      "IsHardpoint": true
+    },
+     {
+      "Number": 7,
+      "PylonMesh": "",
+      "AttachPoint": "Station7",
+      "FireOrder": 4,
+      "HidePylonWhenUnloaded": false,
+      "IsHardpoint": true
+    },
+    {
+      "Number": 4,
+      "PylonMesh": "",
+      "AttachPoint": "Station4",
+      "FireOrder": 5,
+      "HidePylonWhenUnloaded": false,
+      "IsHardpoint": true
+    },
+    {
+      "Number": 6,
+      "PylonMesh": "",
+      "AttachPoint": "Station6",
+      "FireOrder": 6,
+      "HidePylonWhenUnloaded": false,
+      "IsHardpoint": true
+    },
+
+    {
+      "Number": 5,
+      "PylonMesh": "Pylon5",
+      "AttachPoint": "Station5",
+      "FireOrder": 7,
+      "HidePylonWhenUnloaded": true,
+      "IsHardpoint": false
+    },
+
+    {
+      "Number": 1,
+      "PylonMesh": "Pylon1",
+      "AttachPoint": "Station1",
+      "FireOrder": 8,
+      "HidePylonWhenUnloaded": true,
+      "IsHardpoint": false
+    },
+    {
+      "Number": 9,
+      "PylonMesh": "Pylon9",
+      "AttachPoint": "Station9",
+      "FireOrder": 9,
+      "HidePylonWhenUnloaded": true,
+      "IsHardpoint": false
+    },
+    {
+      "Number": 2,
+      "PylonMesh": "Pylon2",
+      "AttachPoint": "Station2",
+      "FireOrder": 10,
+      "HidePylonWhenUnloaded": false,
+      "IsHardpoint": false
+    },
+    {
+      "Number": 8,
+      "PylonMesh": "Pylon8",
+      "AttachPoint": "Station8",
+      "FireOrder": 11,
+      "HidePylonWhenUnloaded": false,
+      "IsHardpoint": false
+    }
+  ]
+}

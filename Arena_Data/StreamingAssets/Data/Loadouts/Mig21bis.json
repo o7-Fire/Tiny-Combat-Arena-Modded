@@ -1,0 +1,166 @@
+{
+  "Aircraft": "Mig21bis",
+  "AllowedStores": [
+    {
+      "Store": "R3S",
+      "MaxCountPerStation": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1
+      },
+      "LauncherModelPaths": {
+        "1": "Launchers/R3Launcher"
+      }
+    },
+    {
+      "Store": "R3R",
+      "MaxCountPerStation": {
+        "1": 1,
+        "2": 1,
+        "4": 1,
+        "5": 1
+      },
+      "LauncherModelPaths": {
+        "1": "Launchers/R3Launcher"
+      }
+    },
+    {
+      "Store": "R60",
+      "MaxCountPerStation": {
+        "1": 2,
+        "2": 1,
+        "4": 1,
+        "5": 2
+      },
+      "LauncherModelPaths": {
+        "1": "Launchers/R60Launcher",
+        "2": "Launchers/R60Launcher2"
+      }
+    },
+    {
+      "Store": "R60M",
+      "MaxCountPerStation": {
+        "1": 2,
+        "2": 1,
+        "4": 1,
+        "5": 2
+      },
+      "LauncherModelPaths": {
+        "1": "Launchers/R60Launcher",
+        "2": "Launchers/R60Launcher2"
+      }
+    }
+  ],
+  "Loadout": [
+    {
+      "Name": "Clean",
+      "NormalizedFuel": 1.0,
+      "Stores": []
+    },
+    {
+      "Name": "Dogfight",
+      "NormalizedFuel": 1.0,
+      "Stores": [
+        {
+          "Station": 1,
+          "Name": "R60",
+          "Count": 1
+        },
+        {
+          "Station": 2,
+          "Name": "R60",
+          "Count": 1
+        },
+        {
+          "Station": 4,
+          "Name": "R60",
+          "Count": 1
+        },
+        {
+          "Station": 5,
+          "Name": "R60",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Strike",
+      "NormalizedFuel": 1.0,
+      "Stores": [
+        {
+          "Station": 1,
+          "Name": "R3S",
+          "Count": 1
+        },
+        {
+          "Station": 2,
+          "Name": "R3R",
+          "Count": 1
+        },
+        {
+          "Station": 4,
+          "Name": "R3R",
+          "Count": 1
+        },
+        {
+          "Station": 5,
+          "Name": "R3S",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Defense",
+      "NormalizedFuel": 1.0,
+      "Stores": [
+        {
+          "Station": 1,
+          "Name": "R3S",
+          "Count": 1
+        },
+        {
+          "Station": 2,
+          "Name": "R3R",
+          "Count": 1
+        },
+        {
+          "Station": 4,
+          "Name": "R3R",
+          "Count": 1
+        },
+        {
+          "Station": 5,
+          "Name": "R3S",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "Air Superiority",
+      "NormalizedFuel": 1.0,
+      "Stores": [
+        {
+          "Station": 1,
+          "Name": "R60",
+          "Count": 2
+        },
+        {
+          "Station": 2,
+          "Name": "R3R",
+          "Count": 1
+        },
+        {
+          "Station": 4,
+          "Name": "R3R",
+          "Count": 1
+        },
+        {
+          "Station": 5,
+          "Name": "R60",
+          "Count": 2
+        }
+      ]
+    }
+  ]
+}

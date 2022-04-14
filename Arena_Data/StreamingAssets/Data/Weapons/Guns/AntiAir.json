@@ -1,0 +1,56 @@
+[
+  {
+    "Name": "AZP-23",
+    "Projectile": "Projectiles/AAABulletG",
+    "MuzzleFlash": "Effects/MuzzleFlash/ShilkaMuzzleFlash",
+    "UseAmmo": false,
+    "AmmoCount": 100,
+    "Gun":
+    {
+      "FireDelay": 0.05,
+      "FireDelayRandomization": 0.0,
+      "MuzzleVelocity": 1000,
+      "Deviation": 0.2,
+      "UseSequentialFiring": true
+    },
+    "Audio":
+    {
+      "Sound": "event:/Weapons/GAU12",
+      "IsLoopingAudio": true
+    },
+    "Shake":
+    {
+      "Power": 0.2,
+      "IsContinuous": true,
+      "MinRange": 5,
+      "MaxRange": 25
+    }
+  },
+  {
+    "Name": "M168",
+    "Projectile": "Projectiles/AAABulletY",
+    "MuzzleFlash": "Effects/MuzzleFlash/VulcanMuzzleFlash",
+    "UseAmmo": false,
+    "AmmoCount": 100,
+    "Gun":
+    {
+      "FireDelay": 0.05,
+      "FireDelayRandomization": 0.0,
+      "MuzzleVelocity": 1000,
+      "Deviation": 0.2,
+      "UseSequentialFiring": true
+    },
+    "Audio":
+    {
+      "Sound": "event:/Weapons/GAU12",
+      "IsLoopingAudio": true
+    },
+    "Shake":
+    {
+      "Power": 0.2,
+      "IsContinuous": true,
+      "MinRange": 5,
+      "MaxRange": 25
+    }
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "Store": {
+    "Name": "Mk84",
+    "DisplayName": "Mk84",
+    "Description": "Low drag 2000lb unguided explosive bomb",
+    "StoreType": "Munition",
+    "ModelPath": "Weapons/Bombs/Mk80Series/Mk84",
+    "DotColors": [ 69, 76, 26 ],
+    "Mass": 925.0,
+    "Length": 3.28,
+    "Diameter": 0.46,
+    "Drag": 0.02
+  },
+  "Warhead": {
+    "ArmTime": 1.0,
+    "BlastRadius": 150.0,
+    "ImpactDamage": 800,
+    "SplashDamage": 300,
+    "Force": 12000.0,
+    "Fuze": "Impact"
+  },
+  "Effects": {
+    "Air": "Effects/Explosion/ExplosionGroundMedium",
+    "Ground": "Effects/Explosion/ExplosionGroundMedium",
+    "Water": "Effects/Explosion/ExplosionGroundMedium"
+  }
+}

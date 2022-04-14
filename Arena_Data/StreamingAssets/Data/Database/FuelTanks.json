@@ -1,0 +1,9 @@
+[
+  {
+    "Name": "AV8B300GalL",
+    "DisplayName": "AV8B 300 Gal",
+    "Category": "Munition",
+    "Filter": "Utility",
+    "Description": "300 gallon external fuel tank. Extends range at the cost of increased drag and weight."
+  }
+]

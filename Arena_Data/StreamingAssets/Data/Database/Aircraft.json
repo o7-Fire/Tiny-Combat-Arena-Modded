@@ -1,0 +1,38 @@
+[
+  {
+    "Name": "F4E",
+    "DisplayName": "F-4E",
+    "Category": "FixedWing",
+    "Filter": "Fighter",
+    "IsFancy": true,
+    "Description": "A versatile heavy fighter with a wide assortment of weapons available to it. This aircraft represented a generational leap in capability when introduced.\n\nIn USAF service, the F-4 was equipped with an internal gun evolved into a fighter-bomber role.",
+    "Tactics": "The F-4E isn't the most nimble plane out there, but it has enough thrust to hold its own in a dogfight. Its large radar, coupled with accurate and long ranged radar guided missiles, make it deadly beyond the dogfight."
+  },
+  {
+    "Name": "F5E",
+    "DisplayName": "F-5E",
+    "Category": "FixedWing",
+    "Filter": "Fighter",
+    "IsFancy": true,
+    "Description": "Small, supersonic lightweight fighter designed for mass production. The F-5 is in service with many western militaries, often with modifications to suit their purposes.",
+    "Tactics": "Due to its light weight and forgiving dynamics, the F-5 is agile and at home in a close range dogfight. However, its relatively weak engines cause it trouble when fighting in the vertical."
+  },
+  {
+    "Name": "Mig21bis",
+    "DisplayName": "MiG-21bis",
+    "Category": "FixedWing",
+    "Filter": "Fighter",
+    "IsFancy": true,
+    "Description": "Lightweight interceptor with a powerful engine. Ubiquitous among Warsaw Pact air forces and around the world owing to its low cost and rugged construction.\n\nThe \"bis\" is the ultimate version of the MiG-21 with an improved engine and capability for the R-60 dogfight missile.",
+    "Tactics": "As an interceptor, the MiG-21 is very quick in a straight line. However, it suffers in low speed dogfights due to its small delta wing configuration."
+  },
+  {
+    "Name": "Mig23MLA",
+    "DisplayName": "MiG-23MLA",
+    "Category": "FixedWing",
+    "Filter": "Fighter",
+    "IsFancy": true,
+    "Description": "Mass produced fighter with a unique set of missiles and variable geometry wings. The MiG-23 features a powerful radar allowing it to detect and engage targets from beyond visual range.\n\nThe \"MLA\" is the newest variant encountered in combat, and allows for carriage of the R-24 series of missiles.",
+    "Tactics": "The MiG-23 is a very fast fighter with even faster missiles. It's capable of beyond visual range combat, but that also means that it's detectable from a further distance than smaller fighters. In a dogfight, its R-60 missiles are unmatched in maneuverability, but are easily fooled with flares."
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "Name": "TankCannonMediumWest",
+    "DisplayName": "105mm Cannon",
+    "Projectile": "Projectiles/TankShell",
+    "MuzzleFlash": "Effects/MuzzleFlash/TankMuzzleFlash",
+    "UseAmmo": false,
+    "AmmoCount": 100,
+    "Gun":
+    {
+      "FireDelay": 5,
+      "FireDelayRandomization": 0.1,
+      "MuzzleVelocity": 400,
+      "Deviation": 0.5,
+      "UseSequentialFiring": true
+    },
+    "Audio":
+    {
+      "Sound": "event:/Weapons/CannonMedium",
+      "IsLoopingAudio": false
+    },
+    "Shake":
+    {
+      "Power": 0.5,
+      "IsContinuous": false,
+      "MinRange": 5,
+      "MaxRange": 50
+    }
+  },
+  {
+    "Name": "TankCannonMediumEast",
+    "DisplayName": "115mm Cannon",
+    "Projectile": "Projectiles/TankShellG",
+    "MuzzleFlash": "Effects/MuzzleFlash/TankMuzzleFlash",
+    "UseAmmo": false,
+    "AmmoCount": 100,
+    "Gun":
+    {
+      "FireDelay": 5,
+      "FireDelayRandomization": 0.1,
+      "MuzzleVelocity": 400,
+      "Deviation": 0.5,
+      "UseSequentialFiring": true
+    },
+    "Audio":
+    {
+      "Sound": "event:/Weapons/CannonMedium",
+      "IsLoopingAudio": false
+    },
+    "Shake":
+    {
+      "Power": 0.5,
+      "IsContinuous": false,
+      "MinRange": 5,
+      "MaxRange": 50
+    }
+  },
+  {
+    "Name": "TankCannonHeavyWest",
+    "DisplayName": "120mm Cannon",
+    "Projectile": "Projectiles/TankShell",
+    "MuzzleFlash": "Effects/MuzzleFlash/TankMuzzleFlash",
+    "UseAmmo": false,
+    "AmmoCount": 100,
+    "Gun":
+    {
+      "FireDelay": 5,
+      "FireDelayRandomization": 0.1,
+      "MuzzleVelocity": 600,
+      "Deviation": 0.3,
+      "UseSequentialFiring": true
+    },
+    "Audio":
+    {
+      "Sound": "event:/Weapons/CannonMedium",
+      "IsLoopingAudio": false
+    },
+    "Shake":
+    {
+      "Power": 0.5,
+      "IsContinuous": false,
+      "MinRange": 5,
+      "MaxRange": 50
+    }
+  },
+  {
+    "Name": "TankCannonHeavyEast",
+    "DisplayName": "125mm Cannon",
+    "Projectile": "Projectiles/TankShellG",
+    "MuzzleFlash": "Effects/MuzzleFlash/TankMuzzleFlash",
+    "UseAmmo": false,
+    "AmmoCount": 100,
+    "Gun":
+    {
+      "FireDelay": 5,
+      "FireDelayRandomization": 0.1,
+      "MuzzleVelocity": 600,
+      "Deviation": 0.3,
+      "UseSequentialFiring": true
+    },
+    "Audio":
+    {
+      "Sound": "event:/Weapons/CannonMedium",
+      "IsLoopingAudio": false
+    },
+    "Shake":
+    {
+      "Power": 0.5,
+      "IsContinuous": false,
+      "MinRange": 5,
+      "MaxRange": 50
+    }
+  }
+]

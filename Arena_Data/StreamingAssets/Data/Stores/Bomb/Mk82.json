@@ -1,0 +1,27 @@
+{
+  "Store": {
+    "Name": "Mk82",
+    "DisplayName": "Mk82",
+    "Description": "Low drag 500lb unguided explosive bomb",
+    "StoreType": "Munition",
+    "ModelPath": "Weapons/Bombs/Mk80Series/Mk82",
+    "DotColors": [ 69, 76, 26 ],
+    "Mass": 227.0,
+    "Length": 2.25,
+    "Diameter": 0.275,
+    "Drag": 0.02
+  },
+  "Warhead": {
+    "ArmTime": 1.0,
+    "BlastRadius": 50.0,
+    "ImpactDamage": 200,
+    "SplashDamage": 100,
+    "Force": 6000.0,
+    "Fuze": "Impact"
+  },
+  "Effects": {
+    "Air": "Effects/Explosion/ExplosionGroundMedium",
+    "Ground": "Effects/Explosion/ExplosionGroundMedium",
+    "Water": "Effects/Explosion/ExplosionGroundMedium"
+  }
+}

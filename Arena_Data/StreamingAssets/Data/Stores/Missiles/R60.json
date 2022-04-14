@@ -1,0 +1,49 @@
+{
+  "Store": {
+    "Name": "R60",
+    "DisplayName": "R-60",
+    "Description": "Highly maneuverable IR guided air to air missile designed for dogfighting",
+    "StoreType": "Munition",
+    "ModelPath": "Weapons/Missiles/R60/R60",
+    "FireSound": "event:/Weapons/MissileLaunchLight",
+    "DotColors": [ 101, 118, 87 ],
+    "Mass": 43.0,
+    "Length": 2.1,
+    "Diameter": 0.12,
+    "Drag": 0.05
+  },
+  "MotorStages": [
+    {
+      "Duration": 4.0,
+      "Delay": 0.0,
+      "Thrust": 6.0,
+      "FXParent": "Motor1",
+      "FXName": "Effects/MissileMotors/Small"
+    }
+  ],
+  "Guidance": {
+    "GuideType": "Infrared",
+    "MaxG": 50,
+    "MaxRange": 10000,
+    "EffectiveRange": 7000,
+    "SeekerDelay": 0.25,
+    "SeekerFOV": 60,
+    "MaxTurnRate": 180,
+    "SpeedOptimal": 75,
+    "SpeedMinimum": 50
+  },
+  "Warhead": {
+    "ArmTime": 1.0,
+    "BlastRadius": 15.0,
+    "ImpactDamage": 0,
+    "SplashDamage": 60,
+    "Force": 1500.0,
+    "Fuze": "Proximity",
+    "ProximityDistance": 5.0
+  },
+  "Effects": {
+    "Air": "Effects/Explosion/ExplosionGroundMedium",
+    "Ground": "Effects/Explosion/ExplosionGroundMedium",
+    "Water": "Effects/Explosion/ExplosionGroundMedium"
+  }
+}

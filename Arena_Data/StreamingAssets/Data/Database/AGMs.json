@@ -1,0 +1,10 @@
+[
+  {
+    "Name": "AGM65D",
+    "DisplayName": "AGM-65D",
+    "Category": "Munition",
+    "Filter": "AGM",
+    "Description": "EO guided anti-tank missile. Has a large enough warhead to destroy any tank on impact.",
+    "Tactics": "The Maverick has a short burning motor and is optimized for gliding. Firing the missile from higher up can greatly extend its reach."
+  }
+]
