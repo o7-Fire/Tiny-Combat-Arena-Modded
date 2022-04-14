@@ -1,0 +1,46 @@
+======================================================================
+
+Game Design, Programming, and Graphics:
+Brian Hernandez
+
+======================================================================
+
+MicroProse Software Pty Ltd
+David Lagiette
+
+Producer:
+Shane Gavin
+
+3D Modeling:
+Mikhail Yuzhakov
+Ian Olegovich
+
+Cockpit art:
+Ian Olegovich
+
+======================================================================
+
+Made with FMOD Studio by Firelight Technologies Pty Ltd.
+
+Sound Effect Libraries by BOOM Library
+
+======================================================================
+
+Various names from Touhou Project by Team Shanghai Alice
+Play and support the Touhou games!
+
+======================================================================
+
+Special thanks
+
+damsonn - Amazing QA tester and retro flight sim enthusiast
+(https://www.youtube.com/user/damsonn/)
+
+RBD2 - Inspirational mad lad who made an amazing game you should play
+(https://store.steampowered.com/app/895870/Project_Wingman/)
+
+jmpr - Emotional support (～￣▽￣)～
+
+Friends from a small amateur game development community who provide
+amazing feedback, have been so supportive, and given me so much help
+and guidance. Thank you! (✿◡‿◡)

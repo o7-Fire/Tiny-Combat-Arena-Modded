@@ -1,0 +1,684 @@
+<b>0.8.2.3 (March 10 2022)</b>
+
+<b>New Features:</b>
+- Throttle sensitivity setting added to change how quickly the throttle moves
+- Throttle shortcut setting added to enable/disable the throttle shortcuts
+- Option to hold virtual joystick pitch while free look is enabled (on by default)
+
+<b>Bugfixes:</b>
+- Fixes to various typos in the settings descriptions
+- Fixed "Block Free Cam Input" selector not syncing up correctly with the setting
+- Fixed Arena bug where plane would revert to Clean loadout on second sortie if player never changes their loadout
+- Default for mouse look is now mouse button 4 (moved off of nonsensical RMB)
+- Default for chaff/flares is now mouse button 5 (off from mouse button 4)
+
+<b>0.8.2.2 (March 9 2022)</b>
+
+<b>Bugfixes:</b>
+- Disabling invert pitch no longer inverts horizontal mouse axis
+- External/chase camera correctly respond to zoom axis input
+- Free/photo camera zoom are not blocked by zoom axis input (they shouldn't be affected by it at all)
+
+<b>0.8.2.1 (March 8 2022)</b>
+
+<b>New Features:</b>
+- Loadouts save between sorties
+- Default loadout defined in Arena scenario definition
+- Added option in system settings to enable/disable TrackIR loading
+- One-time dialog to ask if the player is using head tracking
+- Mouse controls can be used in combination with stick inputs from the binding menu
+- Mouse-specific curve added for use by continuous mode axes
+- Sensitivity settings are now specific to momentary and continuous modes
+- Running quick setup dialog will also reset to default control settings (does not affect bindings)
+- Mouse horizontal axis acts as nosewheel steering when on the ground
+- New default sensitivty values for both mouse axes and input modes
+- Renamed many control options for clarity
+- Simplified descriptions for some of the control settings
+- Fixed many typos and missing settings descriptions
+- Double tapping throttle up/down keys will set throttle max/missing
+- New hotkeys added for min/max throttle (unbound by default)
+- When weight on wheels, and auto flaps set to both, toggling gear will only toggle flaps
+- New camera page on settings screen
+- Default FOV for the cockpit and external cameras can be set
+- FOV for cockpit, external, and chase can be adjusted ingame in real time with zoom keys
+- Momentary flight inputs don't reset immediately to zero
+- Mouse driven free look added to the cockpit, external, and chase views
+- Free look key restored to bindings menu with default of Left Alt
+- Cockpit and chase views can be set to automatically recenter themselves
+- Mouse look mode options: None, Hold, Toggle, Always
+- Mouse look blocks mouse input, but not joystick input
+- Options to invert pitch of mouse look
+- Mouse look sensitivity slider
+- New "quick zoom" behavior which when activated will override current FOV with a preset FOV
+- Quick zoom preset FOV can be adjusted in camera settings
+- Camera zoom has smoothing applied to it
+- Camera smoothing options can be adjusted or disabled entirely
+- Moved camera options that previously existed on the gameplay tab to the camera tab
+
+<b>Improvements:</b>
+- Flat turns by AI should result in less lost altitude
+- Rookie AI is a bit more competent and less likely to spiral to the floor
+- All AI will try to fight in the vertical sometimes
+- When low on energy, AI should try a shallow drive to gain speed
+- New "Light Attack" loadout is new Arena default to make taking off easier
+- M163 uses identical bullet to Shilka
+- AAA shells self-destruct earlier
+- Pressing padlock key while in padlock mode will reset cockpit to looking forwards
+- Padlock locks forward when there is no target
+- Engine spools down faster than spooling up for increased responsiveness
+- Harrier "RCS" system requiers engine thrust to operate
+- Text rendered slightly cleaner in cockpit
+- Mouse controls now enabled on all quick setup presets
+- Moved default keybind for chaff  to 'C' to make room for new camera controls
+- "First time setup" renamed to "Quick Setup" and moved to the System tab on settings
+- MKB preset in quick setup now sets autocenter for cockpit and chase cameras
+- Re-ordered realism settings so that more realistic options are to the right
+- New version popup appears before any other startup popups
+- M163 and Shilka accurate out to a longer distance
+- M163 and Shilka max range increased
+- 1 M163/Shilka added to M60/T-62 units
+- 2 M163/Shilka added to M1/T80 units
+- M163/Shilka units now contain 4 of each instead of 2.
+
+<b>Bugfixes:</b>
+- Attacker aircraft (AV8B) no longer ignore fighter aircraft
+- Locking a ground target with radar guided missiles no longer freezes HUD
+- Afterburner key bind hidden since it's non-functional
+- Base damage percents shouldn't round to >100% anymore
+- "Being Captured by Enemy" should no longer appear for a split second after capturing a base
+- Starting a new Arena mission resets the "Mission Complete" text
+- Centered mission messages (e.g. X has been captured)
+- Loading an empty setup file won't freeze the game on startup
+- Fixed typo in R-24T database description
+- FPS counter won't error if frames take an inordinate amount of time
+- Engine cannot throttle up while spooling up
+- Cockpit view can now be panned while the game is paused
+- Cockpit and external cameras cannot be controlled while escape menu is open
+- Scroll wheel functions correctly in settings menu
+- Fixed many typos in the settings descriptions
+
+<b>0.8.1.6 (February 23 2022)</b>
+
+<b>Bugfixes:</b>
+- Ground units cleared when changing factions in Strike (fixes soft-lock)
+- Defending Shilka/Vulcan no longer drive into the ocean when the lead is destroyed in Strike
+
+<b>0.8.1.5 (February 23 2022)</b>
+
+<b>Bugfixes:</b>
+- Removed double binding checks because it caused more problems than it solved
+- No more "ghost drag" when afterburner is commanded on AV8B
+
+<b>0.8.1.3 (February 23 2022)</b>
+
+<b>New features:</b>
+- Added unused smokeless variants of all three motors (E.g. SmallSmokeless)
+
+<b>Improvements:</b>
+- Renamed Toramaru hangars to simply "Hangar"
+- Selected cockpit view while already in cockpit view recenters the camera
+- If attempting to double bind an action, a warning will be given
+- Early access warning appears only when there's a new patch
+- Bigger "no solution" X on CCIP bomb sight
+- Brake indicator now based on input rather than brake state
+
+<b>Bugfixes:</b>
+- Fixed typo in dogfight quick mission description
+- Joystick X/Y axis no longer navigates control bindings screen
+- Negative brake axis no longer results in feedback loop of forward thrust
+- Removed debug key to launch flares on every aircraft all at once
+- Throttle/Brake/Nozzle angle no longer zero when game window loses focus
+- Double binds are no longer allowed in the binding screen
+- Fixed bug where shooting then pausing the game could cause the gun to keep shooting when unpaused
+- Formations should no longer stop short of a base they are trying to capture
+
+<b>0.8.1.2 (February 20 2022)</b>
+
+<b>New features:</b>
+- Fuel low warning when fuel is <20%
+
+<b>Improvements:</b>
+- Switched meaning of damage text on strategic targets so 90% Damaged means it's almost disabled
+- "AirSuperiority" loadouts renamed to "Air Superiority"
+- Tweaks to all selectable loadouts to add variety and make them make more sense
+- If an invalid loadout is specified, the game falls back on a hardcoded "Clean" loadout
+- "Clean" loadout in loadout definition is no longer ignored, and preferred over hardcoded "Clean" loadout
+
+<b>Bugfixes:</b>
+- Fixed old stores not unloaded correctly when changing loadouts
+- Fixed out of bounds error caused by loading a loadout with less weapons than the previous loadout
+- Analog throttle axis input is clamped
+- Engine will no try to startup if there is no fuel
+- Disallow pause screen from being opened while in rearm mnenu to prevent soft-lock
+- Local settings automatically creates the user folder directories (Settings should save correctly now)
+- Potential fix for ghost missile audio
+
+<b>0.8.1.1 (February 20 2022)</b>
+
+<b>New features:</b>
+
+- Mission complete text in Arena UI when mission is finished
+- Players have only a limited number of pilots available during an Arena mission
+- If all pilots are killed, the Arena mission is failed and sorites cannot be flown
+- New "dont show again" type dialog box used to explain the pilot system
+- Arena sorties now begin on the runway
+- New options to automatically raise/lower flaps with landing gear: Disabled, Lower, Raise, Both
+- First time config for Keyboard/HOTAS uses the "Disabled" setting automatic flaps
+- First time config for gamepads uses the "Both" setting for automatic flaps
+- Support for external fuel tanks
+- Cockpit total fuel gauge includes external fuel tanks
+- Cockpit left/right fuel gauges represent only internal fuel tanks
+- Loadout screen to rearm/refuel and change loadout added when landed at friendly airfield (Arena only)
+- To bring up loadout screen, the player must press the "Select Next Weapon" bind
+- HUD will tell player when they are able to rearm
+- New event message for when the player takes off or lands somewhere
+- Support for aircraft without a gun
+
+<b>Improvements:</b>
+- Strategic lines get thinner as camera gets closer
+- Strategic lines fade away when near the ground
+- Tickets no longer displayed on the arena sortie debrief (they are increasingly irrelevant...)
+- Critical flight messages are now centered on screen
+- Added a bit of the AV8Bs grounded elevator boost back to assist in short field takeoffs
+- Camera yaw commands renamed from Left/Right to Look Left/Look Right
+- Unbound nozzle axis from HOTAS default due to inconsistencies between sticks
+- Unbound flaps from D-Pad down default due to being double-bound with landing gear
+- Joystick hat switch is now bound by default to camera pitch/yaw
+- Maverick seeker angle set to 20
+- Defualt FPS limit is now 120
+
+<b>Bugfixes:</b>
+- Gun piper no longer snaps to vehicles
+- When starting a flight on the ground, throttle is starts at idle
+- Fixed bug where airfield starts were using a hardcoded "Clean" loadout
+- Runway/Ramp takeoffs start with the flaps already down
+- Units for thrust and thrust to weight ratio corrected for aircraft in Database
+- Corrected a typo in the description for vertical mouse movement mode
+- Objectives list uses display names instead of map names
+- Fixed bug where weapon release key might sometimes be ignored
+
+<b>0.8.0.4 (February 17 2022)</b>
+
+<b>Bugfixes:</b>
+- Buildings can be targeted again after they've been repaired (e.g. after a base has been captured)
+- After a building is destroyed, lock is broken with it
+
+<b>0.8.0.3 (February 16 2022)</b>
+
+<b>Improvements:</b>
+- Unified terminology for moving between game states
+- "Main Menu" is used to go back to the main menu for all relevant buttons
+- "Start Sortie" is used to start flying
+- Faster respawning M113s from player's home base in Arena demo mission
+
+<b>Bugfixes:</b>
+- Disabled bases can no longer spawn units
+
+<b>0.8.0.2P (February 15 2022)</b>
+<b>This is a press build!</b>
+
+<b>Improvements:</b>
+- Renamed "Complete Mission" to "End Mission" because "Complete" implies success
+- Revised splash screen
+
+<b>Bugfixes:</b>
+- Instant action missions won't be considered success if the player is killed
+- Made flight results slightly taller to reduce chance of text overflow in Arena
+
+<b>0.8.0.1 (February 15 2022)</b>
+
+<b>New features:</b>
+- Curve slider for stick and rudder pedals in control settings
+- A captured strategic target has its buildings fully restored
+- Pilot skill level affects countermeasure logic
+- Pilot skill affects gunnery and willingness to pull G
+- Pilot skill applied correctly from Arena scenario files to spawned pilots
+- Engine power and fuel usage reduced with higher altitudes
+- Wing lift and aircraft handling reduced with higher altitudes
+- Aircraft handling made relative to indicated airspeed rather than true airspeed
+- Mach displayed on HUD
+- Added dialog to optimize control settings for MKB/Gamepad/Joystick on first startup, and can be re-opened from settings if desired
+- Sand Island has new airfields to take off from in Free Flight
+- Primary and secondary objectives for Arena scenarios
+- Completing primary objectives results in victory for the Arena scenario
+- Strategic targets can be disabled by destroying their critical structures
+- Arena menu UI re-arranged and now shows objectives, mission summary, and static "tutorial" text
+- When mechanized captures a strategic target, it is repaired
+- Strategic target label displays damage and disabled state
+- Very simple scenario complete dialog appears in Arena menu UI when scenario completed
+- Mission message system to display mission critical messages for Arena during both flight and Arena menu
+
+<b>Improvements:</b>
+- A player death in all game modes will result in the game continuing to run until "complete mission" is clicked in escape menu
+- Status text on AI vehicles in Arena mode describing what they're doing (e.g. capture base A)
+- Added Toramaru airfield to large island
+- Large island shape adjusted to prevent vehicles driving over water
+- Capture status visible in Strategic Target labels in Arena
+- Damage model more forgiving to reduce weird flight when wing is lost
+- Greatly increased ticket count (tickets might be removed later, I need to think on this)
+- Arena ticket UI bar hidden (see above)
+- Cockpit target name/type readout handles long text better and shows aircraft type and pilot skill
+- AI aircraft spawn and navigate using indicated airspeed rather than true (safer for AI)
+- F-4 and MiG-23 handling improved so AI fly them less clumsily
+- AI prefer level turns more
+- Highest altitude that can be set for dogfight reduced to 15k feet
+- Faster throttle response on AV8B and MiG-23
+- Deleted a lot of unused and obsolete JSON data files
+- Fulda and "River Demo" map hidden from map selector (they are too WIP to be shown in a public build)
+- Corrections across many database entries
+- R-60 and AIM-82 are much more maneuverable to better represent their roles
+- Removed AV8B's "grounded elevator assist" since the RCS already fills that role
+- All strategic targets have critical targets assigned to them on Sand Island
+- In Arena, camera is initialized in a relevant position (hardcoded for now...)
+- On player death, game switches to free camera to watch the plane explode
+- Arena pilots use a mix of skill levels (Allies: Ace, Enemies: Average/Rookie)
+- Credits fleshed out
+- Cockpit displays do not run while in third person views
+
+<b>Bugfixes:</b>
+- Prevent flaps text from overflowing awkwardly on STOVL page
+- Mission results correctly show status of plane/pilot
+- Mechanized units from Ichirin base in Arena map can now capture bases
+- Fixed crash caused by AI responding to damage from target that doesn't exist
+- Aircraft no longer fly off in a random direction when Arena sortie ended
+- Trees no longer spawn on Sand Island "forests" and beaches
+- Temporary hack to ensure AI never target ground targets because they're missing behaviors for this
+- Fixed control issue with afterburners being extremely slow to respond
+- Expeditionary airfield runway no longer registers as grass by physics
+- Expeditionary airfield runway has its markings and spawns corrected
+- Smart scaling correctly applied to aircraft
+- Airfields no longer register to a map twice
+- Elevator weight on wheels boost can never be lower than 1
+- HUD is no longer visible in the world after player death
+- Cockpit displays only appear in cockpit (no longer linger in the air behind plane)
+- When a strategic target is captured, its buildings change factions with the target
+
+<b>0.7.6.1 (February 5 2022)</b>
+
+<b>Improvements:</b>
+- Solid fog instead of dithered fog
+
+<b>Bugfixes:</b>
+- Bomb drop line scales correctly with HUD scale
+- Structure shadows no longer appear through fog
+- Scatters cleaned up on level unload (fixes leftover scatters appearing in random areas)
+
+<b>0.7.6.0 (February 4 2022)</b>
+
+<b>New features:</b>
+- Loading screen so the game doesn't just freeze for a few seconds when something loads
+- Camera shake can be adjusted in the gameplay settings
+- Nozzle angle, radar altimeter, G meter, throttle indicator, and gun ammo now shown on HUD
+- Radar altimeter shows on the HUD when below 500 feet
+- Gun piper accounts for gravity when firing on ground targets
+- When an air target is locked, the gun piper adjusts to predict the target for greater accuracy
+- HUD can be resized in gameplay settings
+- HUD can be switched between HDM (default) or "Fixed" forward
+- CCIP bomb prediction on the HUD
+
+<b>Improvements:</b>
+- New, smoother splash screen that loads the menu in the background
+- Splash can be skipped after a second by pressing escape or clicking the mouse
+- Smoother UI boxes
+- Wider roads on the big island of Sand Island
+- FPS limit snaps in increments of 10
+- HUD should jitter less while turning
+- Reduced flickering/blinking on the HUD
+- IR/RF missiles use dotted circles instead of solid circles
+- IR/RF missile circles fixed forward
+- Defaults for camera zoom changed to numpad +/-
+- Default for fire gun on keyboard is now left control
+
+<b>Bugfixes:</b>
+- Craters cleared when the map unloads
+- Free camera no longer moves while the escape menu is open
+- Off-screen HUD elements no longer appear center-screen when looking away
+- Fixed crash caused by closing Discord while the game is running
+- Distant visibility dot for munitions appears on launch instead of one second after launch
+- Fixed crash caused by pressing escape while edit keybinds was open, closing it, then opening it again
+- Fixed camera zoom commands being being reversed
+- Removed obsolete camera snap controls
+
+<b>0.7.5.0 (January 26 2022)</b>
+
+<b>Major Known issues:</b>
+- AI aircraft spawn in Arena mode, but their implementation is very basic and placeholder right now. They will not respawn if shot down, and they will all spawn immediately on Arena start to patrol all friendly strategic targets.
+- Vehicles in arena do not respect connections between bases and will drive over mountains to go to the "nearest" base.
+
+<b>New features:</b>
+- New mesh based geometry cloud system
+- Sun is visible in the sky
+- Many new military buildings added
+- Sand Island updated with several new installations, most represented as strategic targets
+- Grass and trees now drawn on terrain
+- Strategic Targets have "critical buildings" which when destroyed will consider the target destroyed
+- Critical buildings can be targeted
+- Structures can now be targeted
+- "Important" targets are given a special color on the HUD
+- All ground targets now have target markers on them through the HUD
+- Targets marked "important" will ALWAYS appear in the kill log
+- Added M136 Vulcan unit and formation accessible in Strike
+
+<b>Improvements:</b>
+- Tweaked nose on AV8B
+- Arena Demo moved back to ActionIsland
+- Backend refactor to remove obsolete strategic target code
+- All strike mission use same Strategic Targets as Arena
+- Action Island strike mission revised to airfield with new buildings
+- Up to 3 formations allowed for both sides
+- Simple roads added to large island north of Sand Island
+- Strike missions can be won by destroying critical buildings for the given target
+- HUD colors adjusted for clarity
+- Unlocked targets appear as smaller and faded target boxes
+- Spawns in strike spread out
+
+<b>Bugfixes:</b>
+- Removed night from being selectable as a time of day
+- Fixed terrain sorting issues with the Sand Island map
+- Fixed bug where roads were sometimes read as grass for physics
+- Fixed smoke effects which would linger indefinitely after an aircraft has been destroyed
+- Fixed structures not appearing in the kill log
+- All buildings are of target type "Structure" instead of "Armor"
+- Cockpit target readout now reacts to destroyed enemies
+- Cockpit target readout won't overflow text if the target name is too long
+- Fixed air defense icon not showing correctly
+- Shilka now uses correct target type of "AAA"
+
+<b>0.7.4.0 (January 3 2022)</b>
+
+<b>New features:</b>
+- Holding target key for half-second will unlock target
+- Chaff added (non-functional)
+- Flares added and can spoof missiles
+- IR missiles are spoofed when they become saturated with flares
+- Saturation added per flare launched depends on distance, aspect angle, afterburner, throttle, flare effectiveness, and seeker flare resistance
+- Keybinds for chaff/flare both combined and separate
+- Countermeasure related values for both the launcher and seeker
+- STOVL page on the left MFD showing VTOL related information for the AV8B
+- Missiles are tracked by the threat warning system (no UI for this yet)
+- AI will drop flares to spoof incoming missiles
+- Added new missile AIM-82B, and associated launchers for 1x, 2x, and 3x loadings
+- AV8B "Air Superiority" loadout changed to 2x AIM-9L, 6x AIM-82B, 2x AIM-7E
+
+<b>Improvements:</b>
+- New game icon
+- Renamed "Lock Target Front" to "Lock Target (Hold to unlock)"
+- AI pilots affected by G-forces
+- AV8B HP buffed to be in line with everything else
+- F4 and Mig23 HP nerfed to not be so unreasonably tanky
+- F4 and Mig23 no longer fly supersonic loops 50 feet above the ground
+- AI more aggressive in dogfights
+- When chasing a fleeing enemy, AI are much more aggressive with their throttle and afterburner
+- AI should predict movements of a target better when on their six
+- AI respond to incoming gunfire (if nearby, will break to attack, else will turn to investigate)
+- Mouse right mouse button defaults to "Release Weapon"
+- Mouse middle mouse button defaults to "Lock Target"
+- Renamed "Speed Control" to "Camera Control"
+- Mouse scroll down defaults to next weapon
+- Mouse button 4 defaults to chaff/flares
+- Buffed tail HP across the board because losing it was so critical and happened too often
+- Stored weight calculated now based on percentage of total weight being stores (e.g. 10% stores weight = 10% maneuverability penalty)
+- AV8B "Strike" loadout adjusted to lighten the load (6x Mk82 changed to 2x Mk83, 60% fuel)
+- From a missile's POV, idle engine now produces 80% normal heat, while off engine 10% normal heat
+- IR signature affected by true engine state (throttle, aftburner, running state)
+- Afterburner IR signature penalty now dependent on aspect (<120 degrees off-axis is 35% penalty, >=120 degrees is 100% penalty)
+- Updated Database descriptions (AIM-7E, AIM-9C, AV8B)
+- AI fly tighter formations
+- AI should fly waypoints a little tighter
+- AI use true airspeed instead of indicated when navigating
+- Slightly larger radome on AV8B model
+- Missiles should be a little more maneuverable and limited by G instead of turn rates
+
+<b>Bugfixes:</b>
+- Bullets no longer cause unintended explosive damage
+- Machineguns like on the M113 and BTR can no longer destroy tanks
+- Fixed crash that could happen when flight lead crashes into the ground
+- Fixed potential bug that could cause missiles guidance to track the wrong target
+- Fixed missile audio continuing to play after it has been destroyed (probably)
+- Fixed F-4 Phantom double Sidewinder launcher and TER bomb rack loading weapons in the incorrect order
+- Loading a loadout correctly sets the loadout defined fuel level
+- Fixed AI not loading with the correct loadout in Strike instant action missions
+- AI should orbit at the dogfight starting altitude instead of 2000 meters AGL
+
+<b>0.7.3.0 (December 13 2021)</b>
+
+<b>New features:</b>
+- Button to hide the UI in the Database
+- Discord rich presence shows current game mode and aircraft being flown
+- Configurable Mouse virtual joystick controls, must be enabled on the Controls page of Settings
+- Mouse X movement can be set to either roll (default) or yaw
+- Mouse Y can be inverted
+- Sensitivity can be adjusted for both axes
+- Mouse "Momentary" mode results in momentary stick input
+- Mouse "Continuous" mode  results in continuous stick input
+- Engines can be turned on/off (defaults to Shift+I)
+- Throttling up with digital throttle (e.g. gamepad controls) automatically starts engine if engine is off
+
+<b>Improvements:</b>
+- Aircraft silenced when in Database view
+- Audio pop when leaving Database is gone
+- Added a bunch of logging related to saving/loading settings
+- Weapons cannot be fired while weight on wheels
+- AV8B's engine can be destroyed if enough damage is taken to a side (this matches the other jets now)
+- Flight input is blocked while the pause menu is open
+
+<b>Bugfixes:</b>
+- Fixed wrong engine effect sometimes apeparing when flying over materials of different depth
+- Hopefully fixed system settings not saving correctly
+- Fix for very intermittent crash when the player is shot down by AI?
+- Dogfight win conditions have been fixed
+
+<b>0.7.2.0 (November 29 2021)</b>
+
+<b>New features:</b>
+- MiG-21bis, MiG-23MLA, and F-4E updated to the unified flight model
+- MiG-21bis, MiG-23MLA, and F-4E have landing gear and appear on the ground in Database
+- G visible on third person camera stats text
+
+<b>Improvements:</b>
+- Moved pause on gamepad to start
+- F11 is now default key for free camera to not conflict with Steam screenshot
+- Removed non-functional view select bindings, re-ordered the ones that were there
+- Renamed brake controls for clarity
+- Aircraft throttles zero when the pilot ejects
+- R-60 stats tweaked to make more sense
+- Ejection sequence is quicker
+- AI no longer waste ammo after shooting down aircraft
+- Strike mission options preserved after opening/closing the menu
+
+<b>Bugfixes:</b>
+- Fixed Strike instant action spawning more aircraft than intended
+- Fixed left stick X roll not being bound by default (?)
+- Fixed crash caused by AI trying to dodge debris
+- Fixed F-5 losing left engine when shot from the right side
+- Fixed crash that could happen when a SARH missile is fired
+- Fixed crash when player crashes into the ground after having been recently shot
+- Fixed crash when using non-default factions for Strike missions
+- Fixed crash when changing faction then closing/reopening Strike menu
+
+<b>0.7.1.2 (November 17 2021)</b>
+
+<b>Improvements:</b>
+- New splash screen
+
+<b>Bugfixes:</b>
+- Fixed bug where controls would be inoperable in Arena mode
+- Damage and fuel descriptions match the option labels
+
+<b>0.7.1.1 (November 17 2011)</b>
+
+<b>Bugfixes:</b>
+- Fly mission button disabled on maps where strike mode is not available
+- Connection status text shows "Online" when online instead of "connected"
+- Default version number (shown only in new version popup from fresh install) reads "0.0.0.0"
+
+<b>0.7.1.0 (November 16 2021)</b>
+
+<b>New features:</b>
+- Realism settings to fine tune the experience
+- New development buttons and info on the main menu with links to Discord and Trello
+- This changelog is viewable within the game
+- View keys are now visible and bindable in the control binding screen
+- Digital throttle controls have "detent" that prevents enabling afterburner while throttling to mil power
+- Afterburner can only be enabled by holding throttle up while at mil power
+- Afterburner toggle key can be used to hold afterburner on without holding throttle up key
+- Changed default bind for afterburner toggle from Shift+W to Shift
+- Brand new settings menu
+- Bindings screen moved to its own screen
+- Bindings can be accessed directly from the ingame pause menu
+- When connected to Steam, non-system specific settings are saved/loaded to Steam Cloud
+- When running standalone, non-system specific settings are saved/loaded locally
+- New gameplay settings: Player damage, fuel consumption, gun ammo, stores weight, and G-forces
+- Player damage can be set to full damage, half-damage, or invulnerable
+- Fuel consumption can be set to full, half, or disabled
+- Gun ammo can be limited or unlimited
+- G-forces can be full, reduced, or disabled
+- New camera settings: Block input on freecam, chase camera roll
+- Chase camera can be set to horizon-aligned or aircraft-aligned
+- Input can be optionally enabled while freecam is active
+- Popup showing that the game has been updated
+
+<b>Improvements:</b>
+- Engine panel had extranous and unused slots removed in the AV8B cockpit
+- Analog fuel tank gauges are now functional in the AV8B cockpit
+- More obvious naming of various axes in the controls binding screen
+- Redder redouts
+- RCS more responsive while in VTOL
+- Small amount of damping when hovering (simulates SAS)
+- When stalled, vertical wing induces a very slight roll
+- Main menu buttons shuffled and renamed
+- Resolutions in system options sorted from biggest to smallest
+
+<b>Bugfixes:</b>
+- Corrected airfield count on RiverDemo map
+- Trail coloring sometimes appeared too dark when afterburners were used
+- AV8B can target ground targets again
+
+<b>0.7.0.1 (November 6 2021)</b>
+
+<b>New features:</b>
+- Dogfight instant action playable on River Test map
+
+<b>Improvements:</b>
+- Wheels bounce around less when landing on grass strips
+- Moved Fulda dogfight location
+- Hid non-functional settings pages
+
+<b>Bugfixes:</b>
+- Removed dev maps from map selector
+- GAU-12 no longer plays fire audio when out of ammo
+
+<b>0.7.0.0 (November 5 2021)</b>
+
+<b>New features:</b>
+- Fulda materials and buildings
+- New terrain system used for Fulda and River map, includes heightmaps, rivers, lakes, and roads
+- Arena scenarios have configurable time of day
+- Vehicle wreck effects linger longer
+- Completely new "Unified flight model" to consolidate code between player and AI aircraft
+- AI aircraft now support (but do not necessarily use) landing gear and control surfaces
+- Radars can be located on a specific location of the aircraft (e.g. nosecone)
+- AI aircraft react to ground collisions the same as player aircraft rather than instantly exploding
+- Flaps are now toggle on/off only, with flap angle handled automatically by airspeed and nozzle angle (flaps need rebinding by player)
+- Landing gear causes drag
+- After a pilot ejects, aircraft cannot be controlled
+- New empty default cockpit/HUD will be used for aircraft without cockpits
+- Completely new engine audio for AV8B and F-5E
+- When in cockpit, a new engine audio sound is heard
+- Flyby audio system and SFX completely redone and work much better
+- "Splash" effect from powered up engines pointed at the ground
+- Complete overhaul of AI, based on mission, behavior, and action framework
+- AI spawn and organized into flights that fly formation
+- Missions: Idle, Fly Path, Attack Aircraft, Attack Flight, Investigate Point, Combat Air Patrol
+- Behaviors: Idle Orbit, Straight, Pursuit, Break, Fly Waypoints, Dogfight, Strafe Airborne, Investigate, Combat Air Patrol
+- Many, many routines for AI terrain avoidance
+- AI wingmen go into holding pattern if player starts to hover or lands
+- AI on patrol will react if they are locked
+- Holding lock button unlocks target
+- AI use rules of engagement to priotize targeting
+- Strategic targets can have links to other bases (not used for anything yet)
+- AI ease up on stick based on G
+- Stores affect aircraft weight and maneuverability
+- River map is the new Arena map
+- Aircraft named based on flights, with optional callsigns
+- Very basic Steam integration, player aircraft shows Steam name
+- Version always displayed on bottom right of screen
+- Steam connection status displayed on bottom left of screen
+- Early access popup on startup
+
+<b>Improvements:</b>
+- All vehicles sped up
+- Vehicle formations more spread out
+- More dramatic impact effects
+- Optimizations to stopped and landed aircraft
+- AV8B model has more details
+- Landing gear optimizations
+- Flyby camera shot length extended
+- Engine trail now a smooth unbroken trail with noise and affected by wind
+- Parachute cannot be destroyed until after it's been deployed
+- Less screen shake on aircraft guns
+- 100hz physics framerate
+
+<b>Bugfixes:</b>
+- Fixed switching to bombs potentially causing crash
+- Time of day affected by mission
+- Wind updates direction correctly
+- Fixed bug where external/chase camera would sometimes look at nothing
+- Fixed very old bug where landing gear didn't make noise when rolling
+- Clouds blow in the same speed/direction as the wind
+- Impacting hard surfaces does not generate craters
+- Wingtip F-5E missiles now correctly parented to wings
+- Doppler effect actually works for engine audio
+- Random engine audio pops no longer heard from cockpit
+- Engine audio should stop when aircraft is destroyed
+- Misplaced stores won't crash the game anymore
+- Fixed F-5E not having correctly mirrored stores
+- Building and object shadows no longer overlap in a weird way
+- Missiles unlock when radar unlocks
+- Updated Shapes library to fix flickering across various HUD elements
+- Partial fix to cockpit jitter when rolling (still needs full fix)
+- Shadows no longer drawn on top of vehicles when viewed from large distances
+
+<b>0.6.1.0 (June 6 2021)</b>
+- Major revision to how strategic target symbology is drawn (looks same, should be less error prone)
+- Ground vehicle are difficult to target with IR guided weapons
+- Formation icons use short name of formation
+- Fixed bug where ejected pilots caused targeting errors
+- Tweaked ejecting pilot and parachute physics
+- Ejected pilots affected by wind
+- Ejected pilots are named after their factions
+- Formation icons now reflect their unit type (e.g. armor, AAA, etc)
+- AI are much more adverse to flying low in an effort to prevent ground collisions
+- Ejection sequence sped up for two seater aircraft
+- Added AIM-7 series missiles (AIM-7E, AIM-7F)
+- Added R-23 series missiles (R-23R, R-23T, R-24R, R-24T)
+- All air to air missiles use a proximity fuze and splash damage instead of impact damage
+- Aircraft more difficult to lock onto from the front
+- Added F-4E and MiG-23MLA
+- Support for swing wing AI aircraft
+- HUD symbology for radar guided missiles
+- Added the radar guided AIM-9C
+- Semi-active radar homing missiles track only what the radar is currently locked onto
+- Pass on all the missiles to ensure they track the correct signatures
+- Fixed misaligned flame effect on missile motor staged ignition
+- Renamed AIM-9M to AIM-9L
+- Weapons can be attached by normal attach, or hardpoint specific attach (used for AIM-7)
+- Database shows more information for munition guidance
+- Far clip distance increased so fog effect appears correctly
+- Fixed occasional crash when a formation is destoryed
+- Camera falls back on free camera if uninitialized
+- Distant aircraft have specifically colored dots ~2 pixels large
+- "Air superiority" loadout of AV8B features two AIM-7Es
+- Fixed bug where sometimes shooting the island would result in "hard" hit effects instead of "soft"
+- Radar HUD display switched to B-Scope style display
+
+<b>0.6.0.1 (May 12 2021)</b>
+- AI pilots can eject
+- External camera can switch to object if not initialized
+- Shifted player start position in dogfight
+- No HUD elements displayed in third person views
+- Added version number on bottom right
+- Fixed bug where first flight was missing the first missile
+
+<b>0.6.0.0
+- Initial Steam build
